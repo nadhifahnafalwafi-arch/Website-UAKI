@@ -1,0 +1,15 @@
+﻿# Paket yang diunduh otomatis (bisa dibuat ulang dengan npm install)
+node_modules/
+
+# Hasil build
+dist/
+
+# Rahasia dan pengaturan lokal (jangan pernah di-push)
+.env
+.env.*
+!.env.example
+
+# File sampah sistem dan log
+.DS_Store
+Thumbs.db
+*.log

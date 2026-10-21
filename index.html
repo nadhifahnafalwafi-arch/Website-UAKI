@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/logoUAKI.svg" />
+    <meta name="description" content="UAKI UB, United for All Knowledge and Innovation. Membangun generasi muslim yang berilmu dan berinovasi." />
+    <meta name="theme-color" content="#626F44" />
+    <meta property="og:site_name" content="UAKI UB" />
+    <meta property="og:type" content="website" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>UAKI UB</title>
+
+    <style>
+      #uaki-preloader {
+        position: fixed;
+        inset: 0;
+        z-index: 3000;
+        background: radial-gradient(60% 55% at 50% 45%, #626f44 0%, #4c5735 60%, #404a2e 100%);
+      }
+      .uaki-no-preloader #uaki-preloader {
+        display: none;
+      }
+    </style>
+    <script>
+      ;(function () {
+        var LOADER_MODE = 'session'
+        var SESSION_KEY = 'uaki-loader-seen'
+        try {
+          var forced = new URLSearchParams(location.search).get('loader') === '1'
+          var seen = sessionStorage.getItem(SESSION_KEY)
+          if (!forced && LOADER_MODE !== 'always' && seen) document.documentElement.classList.add('uaki-no-preloader')
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="uaki-preloader" aria-hidden="true"></div> 
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
