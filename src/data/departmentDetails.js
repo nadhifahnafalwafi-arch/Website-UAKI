@@ -111,7 +111,7 @@ export const departmentDetails = {
     ],
   },
   bpi: {
-    about: '[ISI] Dskripsi departemen Badan Pngurus Inti.',
+    about: 'Badan Pengurus Internal merupakan pimpinan tertinggi organisasi yang bertanggung jawab dalam menetapkan arah kebijakan, memimpin jalannya organisasi, serta memastikan seluruh elemen organisasi bergerak selaras dengan visi, misi, dan nilai dasar organisasi. Ketua Umum berperan sebagai penggerak utama yang mengintegrasikan seluruh potensi organisasi untuk mewujudkan tujuan dakwah kampus secara efektif dan berkelanjutan.',
   
     proker: [
       { name: 'ARAH JEJAK WARNA', description: 'Syura rutin BPI untuk memonitor dan mengevaluasi kinerja serta menyampaikan rencana dan arahan strategis organisasi.' },
